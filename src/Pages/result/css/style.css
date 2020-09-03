@@ -1,0 +1,156 @@
+.absolute-title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-line {
+    float: left;
+    width: 75px;
+    height: 75px;
+}
+
+.result-paraph {
+    display: inline;
+    color: white;
+    font-size: 55px;
+}
+
+.result-paraph:after {
+    clear: both;
+}
+
+.test1,
+.test2,
+.test3,
+.test4 {
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+.test1 {
+    left: 15%;
+}
+
+.test2 {
+    left: 35%;
+}
+
+.test3 {
+    left: 55%;
+}
+
+.test4 {
+    left: 75%;
+}
+
+.result {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    width: 50px;
+    height: 50px;
+}
+
+.image-gender {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    width: 50px;
+    height: 50px;
+}
+
+.image-smile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    width: 50px;
+    height: 50px;
+}
+
+.image-local {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    width: 50px;
+    height: 50px;
+}
+
+.word {
+    font-size: large;
+    color: white;
+}
+
+.result-text {
+    font-size: xx-large;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .test1,
+    .test2,
+    .test3,
+    .test4 {
+        position: absolute;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 700px) {
+    .absolute-title {
+        top: 10%;
+    }
+    .test1,
+    .test2,
+    .test3,
+    .test4 {
+        left: 45%;
+    }
+    .test1 {
+        top: 25%;
+    }
+    .test2 {
+        top: 50%;
+    }
+    .test3 {
+        top: 75%;
+    }
+    .test4 {
+        top: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .image-line {
+        display: none;
+    }
+    .test1,
+    .test2,
+    .test3,
+    .test4 {
+        left: 25%;
+    }
+}

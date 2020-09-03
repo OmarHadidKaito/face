@@ -1,0 +1,67 @@
+.vertical-center {
+    position: absolute;
+    transform: translateY(15vh);
+}
+
+.AMborder {
+    border: 3px solid #DAE1E7;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.uplouad-paragraph {
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.button-chooser {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.file-paragraph {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.drop-zone {
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+    padding: 60px;
+    background-color: #27496D;
+    border: 5px dashed #707070;
+    border-radius: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #bdbdbd;
+    outline: none;
+    transition: border .24s ease-in -out;
+}
+
+.AIbutton {
+    width: 50%;
+    margin: 20px 25%;
+    background: #27496D;
+    border: 2px solid gray;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    font-size: 1em;
+    outline: none;
+}
+
+.AIbutton:hover {
+    color: #0C3152;
+    background: white;
+}
