@@ -1,58 +1,12 @@
-.vertical {
-    position: relative;
-}
-
-.white-text {
-    color: white;
-}
-
-.vertical-center {
-    position: absolute;
-    transform: translateY(15vh);
-}
-
-.WMborder {
-    border: 3px solid #DAE1E7;
-    border-radius: 30px;
-    padding: 10px;
-}
-
-.title {
-    padding: 20px;
-    font-size: x-large;
-}
-
-.second-title {
-    color: #ADB0B4;
-    margin-left: 10px;
-    font-size: large;
-}
-
-.WMborder .paragraph {
-    padding: 10px;
-}
-
 .Mbutton {
-    width: 60%;
-    margin: 50px 20%;
-    background: none;
-    border: 2px solid gray;
-    color: white;
-    padding: 10px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-    display: inline-block;
-    font-size: 1em;
-    outline: none;
-    color: white;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 2px solid gray;
+  border-radius: 20px;
 }
 
 .Mbutton:hover {
-    background: #ADB0B4;
-    color: white;
+  background: #adb0b4;
+  color: white;
 }
