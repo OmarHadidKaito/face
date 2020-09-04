@@ -1,22 +1,17 @@
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #0C3152;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 992px) {
-    #particles-js {
-        height: 160vh;
-    }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-@media (max-width: 400px) {
-    #particles-js {
-        height: 120vh;
-        background-color: #0C3152;
-    }
+.particles-js {
+  background-color: #0c3152;
 }

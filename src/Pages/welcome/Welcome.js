@@ -2,34 +2,64 @@ import React from "react";
 import { Link } from "react-router-dom";
 import face from "./image/face1.png";
 import "./css/style.css";
+import Particles from "react-particles-js";
+import { particlesParams } from "../../Configuration/particle.config";
+import { Container, Row, Col, Image, Card } from "react-bootstrap";
 
 const Welcome = () => {
   return (
-    <div className="container vw-100 vh-100">
-      <div className="row vh-100 align-items-center">
-        <div className="col-lg-6 white-text">
-          <div className="WMborder">
-            <p className="title text-center">
-              Welcome to our analysis world !!
-            </p>
-            <p className="second-title">Why we are here ?</p>
-            <p className="paragraph">
-              This site was created for joying and demonstration many services
-              for multiple domains.
-            </p>
-            <p className="paragraph">
-              Let us save our words and go dirctly to enter in the actions :-
-              ...
-            </p>
-            <Link to="/services" className="Mbutton ">
-              GO TO SERVICES
-            </Link>
-          </div>
-        </div>
-        <div className="col-lg-6 white-text">
-          <img src={face} className="img-fluid" alt="." />
-        </div>
-      </div>
+    <div className="position-relative">
+      <Particles
+        className="position-absolute w-100 h-100 d-flex flex-column particles-js"
+        params={particlesParams}
+      />
+      <Container>
+        <Row className="justify-content-center align-items-center text-white py-5">
+          <Col sm={12} md={6}>
+            {/* example approach */}
+            {/* <Card border="white" className="bg-transparent">
+                <Card body className="bg-transparent">
+                  <Card title className="bg-transparent">
+                    Welcome to our analysis world !!
+                  </Card>
+                  <Card subtitle className="bg-transparent">
+                    Why we are here ?
+                  </Card>
+                  <Card text className="bg-transparent">
+                    This site was created for joying and demonstration many
+                    services for multiple domains.
+                  </Card>
+                  <Card link className="bg-transparent">
+                    <Link to="/services" className="bg-transparent">
+                      GO TO SERVICES
+                    </Link>
+                  </Card>
+                </Card>
+              </Card> */}
+            <div className="p-5 border border-white rounded-lg d-flex flex-column">
+              <p className="text-center h1">Welcome to our analysis world !!</p>
+              <p className="second-title h4 pb-2">Why we are here ?</p>
+              <p className="pb-2 ">
+                This site was created for joying and demonstration many services
+                for multiple domains.
+              </p>
+              <p>
+                Let us save our words and go dirctly to enter in the actions :-
+                ...
+              </p>
+              <Link
+                to="/services"
+                className="Mbutton text-white text-uppercase text-decoration-none align-self-center"
+              >
+                GO TO SERVICES
+              </Link>
+            </div>
+          </Col>
+          <Col sm={12} md={6}>
+            <Image src={face} fluid alt="." />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

@@ -57,9 +57,5 @@ export const particlesParams = {
   retina_detect: true,
   config_demo: {
     hide_card: false,
-    background_color: "#0C3152",
-    background_image: "",
-    background_repeat: "no-repeat",
-    background_size: "cover",
   },
 };
